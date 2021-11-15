@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+   line-height: 1.8;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 2rem 0;
+}
+
+img {
+    width: 44px;
+    height: 30px;
+   margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.box {
+    padding: 2.5rem 2.5rem;
+    width: 270px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.box1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.box2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.box a {
+padding: 10px 25px;
+background-color: white;
+border-radius: 20px;
+text-decoration: none;
+cursor: pointer;
+font-family: 'Lexend Deca', sans-serif;
+}
+
+.box a:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.box1 a {
+    color: hsl(31, 77%, 52%)
+}
+
+
+
+.box2 a {
+    color:hsl(184, 100%, 22%);
+}
+
+.box3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+
+    .box {
+        width: 270px;
+        height: 450px;
+    }
+
+    .box1 {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .box3 {
+        border-radius: 0 0 1rem 1rem;
+    }
+    
+}
